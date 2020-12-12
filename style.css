@@ -1,0 +1,22 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  background-color: bisque;
+}
+span {
+  background-color: rgb(190, 176, 132) ;
+  border:1px solid black;
+  width:10%;
+  display:inline-block;
+  text-align:center;
+  font-size:40px;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:rgb(58, 7, 122);
+}
+
+.container {
+  margin: 10vh;
+}
