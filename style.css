@@ -1,22 +1,52 @@
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 body {
   background-color: bisque;
 }
 span {
-  background-color: rgb(190, 176, 132) ;
-  border:1px solid black;
-  width:10%;
-  display:inline-block;
-  text-align:center;
-  font-size:40px;
+  background-color:rgb(240, 155, 80);
+  border: 1px solid black;
+  width: 10%;
+  display: inline-block;
+  text-align: center;
+  font-size: 40px;
   font-weight: bold;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color:rgb(58, 7, 122);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(15, 100, 173);
+  user-select: none;
 }
 
 .container {
   margin: 10vh;
+}
+
+.limite {
+  margin: auto;
+  margin-top: 40vh;
+  width: 70%;
+  border: 5px solid rgb(15, 100, 173);
+  display: flex;
+  justify-content: center;
+}
+
+.nombre,
+.bouton {
+  font-size: 50px;
+  height: 80px;
+  border: none;
+  outline: none;
+}
+.nombre {
+  width: 85%;
+}
+
+.bouton {
+  width: 15%;
+  cursor: pointer;
+}
+.bouton:hover {
+  background-color: rgb(15, 100, 173);
+  color: rgb(240, 155, 80);
 }
