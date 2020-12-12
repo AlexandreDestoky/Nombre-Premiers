@@ -7,16 +7,16 @@ const limite = document.querySelector(".limite");
 //variables de travail
 let nombreChoisi;
 
+//Quand on click sur
 btn.addEventListener("click", () => {
-  if (nombre.value == "") {
-    alert("veuillez entrez un nombre");
+  if (nombre.value == "" || nombre.value > 5000) {
+    alert("veuillez entrez un nombre valide ");
   } else {
     nombreChoisi = nombre.value;
     limite.style.display = "none";
     affichageNombre(nombreChoisi);
   }
 });
-
 
 //Fonction de vérification de nombre premier
 let verifPremier = (nombreATester) => {
@@ -29,13 +29,11 @@ let verifPremier = (nombreATester) => {
   return nbrPremier;
 };
 
-
 //fonction d'affichage des nombres
 let affichageNombre = (nombreChoisi) => {
   for (let i = 1; i <= nombreChoisi; i++) {
     let div = document.createElement("span");
     div.textContent = i;
-    box.append(div);
 
     //Retour a la ligne a chaque dizaine
     if (i % 10 == 0) {
@@ -47,5 +45,6 @@ let affichageNombre = (nombreChoisi) => {
       div.style.background = "rgb(15, 100, 173)";
       div.style.color = "rgb(240, 155, 80)";
     }
+    box.append(div);
   }
 };
